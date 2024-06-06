@@ -475,10 +475,16 @@
     </footer>
     <div class="backdrop-overley">
       <div class="modal-overley">
+        <button class="modal-button">
+          <svg class="modal-button-icons" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal">
-          <p>Leave your contacts and we will call you back</p>
-          <label for=""
-            >Name
+          <label for="">
+            Name
             <input type="text" class="modal-form" />
           </label>
           <label for=""
@@ -495,7 +501,7 @@
             <textarea class="modal-form-comment" id=""></textarea>
           </label>
 
-          <button class="modal-button">Send</button>
+          <button class="modal-form-button" type="button">Send</button>
         </form>
       </div>
     </div>
