@@ -475,7 +475,7 @@
     </footer>
     <div class="backdrop-overley">
       <div class="modal-overley">
-        <button class="modal-button">
+        <button class="modal-button" type="button">
           <svg class="modal-button-icons" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -483,25 +483,67 @@
 
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal">
-          <label for="">
-            Name
-            <input type="text" class="modal-form" />
+          <div class="modal-input">
+            <label class="modal-input-label" for="user-name">
+              Name
+              <div class="modal-form-icon">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  class="modal-form-icon-input"
+                />
+                <svg class="modal-svg" width="18px" height="24px">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div>
+             <div class="modal-input">
+            <label class="modal-input-label" for="phone">
+             Phone
+              <div class="modal-form-icon">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="modal-form-icon-input"
+                />
+                <svg class="modal-svg" width="18px" height="24px">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+           
+         <div class="modal-input">
+            <label class="modal-input-label" for="email">
+             Email
+              <div class="modal-form-icon">
+                <input
+                  type="email"
+                  name="phone"
+                  id="email"
+                  class="modal-form-icon-input"
+                />
+                <svg class="modal-svg" width="18px" height="24px">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-comment">
+ <label for="user-comment"  class="modal-input-label">
+   Comment
+            <textarea class="modal-form-comment"  name="user-comment" id="user-comment" placeholder="Text input" ></textarea>
           </label>
-          <label for=""
-            >Phone
-            <input type="text" class="modal-form" />
-          </label>
-          <label for=""
-            >Email
-            <input type="text" class="modal-form" />
-          </label>
+          </div>
+         <div class="modal-checkbox">
+<input class="modal-checkbox-button" type="button">Send</input>
+         </div>
 
-          <label for=""
-            >Comment
-            <textarea class="modal-form-comment" id=""></textarea>
-          </label>
-
-          <button class="modal-form-button" type="button">Send</button>
+          
         </form>
       </div>
     </div>
