@@ -565,7 +565,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.modal-form-icon-input:focus {
+input:focus + svg {
   fill: #4d5ae5;
 }
 
